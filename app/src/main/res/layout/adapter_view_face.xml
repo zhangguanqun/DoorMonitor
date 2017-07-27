@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/adapter_tv_date"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/example_time"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size" />
+
+    <LinearLayout
+        android:id="@+id/adapter_layout_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.androidnetworking.widget.ANImageView
+            android:id="@+id/adapter_iv_face"
+            android:layout_marginRight="10dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp">
+            <TextView
+                android:id="@+id/adapter_tv_time"
+                android:padding="5dp"
+                android:background="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/example_time_no_date"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorLight"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp">
+            <TextView
+                android:id="@+id/adapter_tv_person"
+                android:padding="5dp"
+                android:background="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/unknown_person"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorLight"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
